@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="../1-timer.html">Page 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="../2-snackbar.html">Page 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <div class="container">
@@ -40,7 +49,7 @@
             <span class="label">Seconds</span>
           </div>
         </div>
-        <load src="./partials/back-link.html" />
+        <a class="back-link" href="../index.html">Go back</a>
       </div>
     </main>
     <script type="module" src="./js/1-timer.js"></script>
